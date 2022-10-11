@@ -1,5 +1,5 @@
 # trining
-
+- this app for trining on flutter
 ![myFistApp.png](img/myFistApp.png)
 
 ## Getting Started
