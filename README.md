@@ -1,6 +1,6 @@
 # trining
 
-A new Flutter project.
+![myFistApp.png](myFistApp.png)
 
 ## Getting Started
 
