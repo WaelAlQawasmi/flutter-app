@@ -1,6 +1,11 @@
 # trining
 
+
+
+
+- this app for trining on flutter
 ![myFistApp.png](img/dash.png)
+
 
 ## Getting Started
 
