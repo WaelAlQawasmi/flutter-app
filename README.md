@@ -1,6 +1,6 @@
 # trining
 
-![myFistApp.png](img/myFistApp.png)
+![myFistApp.png](img/dash.png)
 
 ## Getting Started
 
