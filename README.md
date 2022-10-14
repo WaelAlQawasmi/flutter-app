@@ -6,6 +6,7 @@
 - this app for trining on flutter
 ![myFistApp.png](img/dash.png)
 
+![myFistApp.png](img/button.png)
 
 ## Getting Started
 
