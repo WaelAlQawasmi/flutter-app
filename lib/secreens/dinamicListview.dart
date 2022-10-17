@@ -10,10 +10,6 @@ class DynaminListViow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(Icons.menu),
-          onPressed: () {},
-        ),
         title: Text("Dynamic List view"),
         actions: [
           IconButton(
@@ -30,6 +26,63 @@ class DynaminListViow extends StatelessWidget {
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(bottom: Radius.circular(20))),
         centerTitle: true,
+      ),
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            UserAccountsDrawerHeader(
+                decoration: BoxDecoration(color: Colors.cyan),
+                currentAccountPicture: CircleAvatar(
+                    foregroundImage: NetworkImage(
+                        "https://avatars.githubusercontent.com/u/47054275?v=4")),
+                // otherAccountsPictures: [],
+                accountName: Text("wael alqawasmi"),
+                accountEmail: Text("WAEL@Y.COM")),
+            ListTile(
+              autofocus: true,
+              leading: Icon(Icons.home),
+              title: Text("Home"),
+              onLongPress: () {},
+            ),
+            ListTile(
+              leading: Icon(Icons.history),
+              title: Text("history"),
+              onLongPress: () {},
+            ),
+            ListTile(
+              leading: Icon(Icons.person),
+              title: Text("profile"),
+              onLongPress: () {},
+            ),
+            Padding(
+              padding: EdgeInsets.all(14),
+              child: Text(
+                "label",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.label),
+              title: Text("first ride"),
+              onLongPress: () {},
+            ),
+            ListTile(
+              leading: Icon(Icons.label),
+              title: Text("last ride"),
+              onLongPress: () {},
+            ),
+            Align(
+              child: ListTile(
+                leading: Icon(Icons.logout),
+                title: Text(" log out"),
+                onLongPress: () {},
+
+              ),
+              alignment: Alignment.topCenter,
+            ),
+          ],
+
+        ),
       ),
       body: Container(
         child: ListView.builder(
