@@ -3,6 +3,7 @@ import 'package:trining/secreens/Home.dart';
 import 'package:trining/secreens/cloumRows.dart';
 import 'package:trining/secreens/dashboard.dart';
 import 'package:trining/secreens/img.dart';
+import 'package:trining/secreens/listViow.dart';
 import 'package:trining/secreens/random.dart';
 
 void main() {
@@ -17,7 +18,7 @@ void main() {
       title: "wael   k qapp",
       themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
-      home:columRows
+      home:listViow
         ());
     }
   }
