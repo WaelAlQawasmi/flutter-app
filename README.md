@@ -1,4 +1,5 @@
 # trining
+![myFistApp.png](img/clomeandrow.png)
 ![myFistApp.png](img/HOME.png)
 ![myFistApp.png](img/dash.png)
 ![myFistApp.png](img/button.png)
