@@ -1,4 +1,5 @@
 # trining
+![myFistApp.png](img/stak.png)
 ![myFistApp.png](img/BOTTONbar.png)
 ![myFistApp.png](img/navagation.png)
 ![myFistApp.png](img/dynamicListViow.png)
