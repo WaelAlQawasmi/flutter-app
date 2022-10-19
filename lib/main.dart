@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trining/secreens/Home.dart';
+import 'package:trining/secreens/StackPositioned.dart';
 import 'package:trining/secreens/cloumRows.dart';
 import 'package:trining/secreens/dashboard.dart';
 import 'package:trining/secreens/dinamicListview.dart';
@@ -19,8 +20,7 @@ void main() {
       title: "wael   k qapp",
       themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
-      home:listViow
-        ());
+      home:StackPositioned());
     }
   }
 
