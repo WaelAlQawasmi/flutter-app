@@ -76,12 +76,10 @@ class DynaminListViow extends StatelessWidget {
                 leading: Icon(Icons.logout),
                 title: Text(" log out"),
                 onLongPress: () {},
-
               ),
               alignment: Alignment.topCenter,
             ),
           ],
-
         ),
       ),
       body: Container(
