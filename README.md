@@ -1,15 +1,16 @@
 # trining
-![myFistApp.png](img/stak.png)
-![myFistApp.png](img/BOTTONbar.png)
-![myFistApp.png](img/navagation.png)
-![myFistApp.png](img/dynamicListViow.png)
-![myFistApp.png](img/listviow.png)
+![myFistApp.png](assets/img/enasTegrame.png)
+![myFistApp.png](assets/img/stak.png)
+![myFistApp.png](assets/img/BOTTONbar.png)
+![myFistApp.png](assets/img/navagation.png)
+![myFistApp.png](assets/img/dynamicListViow.png)
+![myFistApp.png](assets/img/listviow.png)
 
-![myFistApp.png](img/clomeandrow.png)
+![myFistApp.png](assets/img/clomeandrow.png)
 
 
 
-![myFistApp.png](img/HOME.png)
+![myFistApp.png](assets/img/HOME.png)
 
 
 
