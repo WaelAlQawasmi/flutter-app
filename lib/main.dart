@@ -6,7 +6,7 @@ import 'package:trining/secreens/dashboard.dart';
 import 'package:trining/secreens/dinamicListview.dart';
 import 'package:trining/secreens/img.dart';
 import 'package:trining/secreens/listViow.dart';
-import 'package:trining/secreens/random.dart';
+import 'package:trining/secreens/posts.dart';
 
 void main() {
   runApp(Myapp());
@@ -20,7 +20,7 @@ void main() {
       title: "wael   k qapp",
       themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
-      home:listViow());
+      home:Posts(),);
     }
   }
 
