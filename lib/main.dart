@@ -20,7 +20,7 @@ void main() {
       title: "wael   k qapp",
       themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
-      home:Posts(),);
+      home:Home(),);
     }
   }
 
