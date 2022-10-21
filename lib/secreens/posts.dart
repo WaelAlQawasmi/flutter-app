@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
 
 class Posts extends StatelessWidget {
-  const Posts({Key? key}) : super(key: key);
-
+   Posts({Key? key,required this.username}) : super(key: key);
+String username;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-appBar: AppBar(title: Text("enas tegram",style: TextStyle(fontFamily:'Freehand-Regular' ),
+      drawer:appbar(username:username) ,
+appBar: AppBar(actions: [
+  IconButton(onPressed: (){
+    Navigator.pop(context);
+  }, icon: Icon(Icons.logout))
+],
+  title: Text("enas tegram",style: TextStyle(fontFamily:'Freehand-Regular'
+),
 
 ),
 backgroundColor: Colors.black87,),
@@ -17,6 +24,36 @@ backgroundColor: Colors.black87,),
 }
 
 
+/// bar
+class appbar  extends StatefulWidget {
+   appbar ({Key? key , required this.username}) : super(key: key);
+String username;
+  @override
+  State<appbar> createState() => _appbarState(username:username);
+}
+
+class _appbarState extends State<appbar> {
+  String username;
+  _appbarState ({ required this.username}) ;
+
+  @override
+  Widget build(BuildContext context) {
+    return Drawer(
+      child: ListView(
+        children: [
+          IconButton(onPressed: (){
+            Navigator.pop(context);
+          }, icon: Icon(Icons.logout)),
+          UserAccountsDrawerHeader(accountName: Text(username), accountEmail: Text("wael.alqawasmi@yahoo.com"))
+        ],
+      ),
+    );
+  }
+}
+
+
+
+//body
 
 
 class postsViow extends StatefulWidget {
