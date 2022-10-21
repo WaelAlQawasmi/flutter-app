@@ -1,6 +1,6 @@
 # trining
 ![myFistApp.png](assets/img/enasTegrame.png)
-![myFistApp.png](assets/img/stak.png)
+
 ![myFistApp.png](assets/img/BOTTONbar.png)
 ![myFistApp.png](assets/img/navagation.png)
 ![myFistApp.png](assets/img/dynamicListViow.png)
@@ -12,15 +12,15 @@
 
 ![myFistApp.png](assets/img/HOME.png)
 
-
+![myFistApp.png](assets/img/stak.png)
 
 
 
 - this app for trining on flutter
 
-![myFistApp.png](img/dash.png)
+![myFistApp.png](assets/img/dash.png)
 
-![myFistApp.png](img/button.png)
+![myFistApp.png](assets/img/button.png)
 
 ## Getting Started
 
