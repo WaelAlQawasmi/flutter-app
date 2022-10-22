@@ -1,60 +1,61 @@
 import 'package:flutter/material.dart';
 
 class Posts extends StatelessWidget {
-   Posts({Key? key,required this.username}) : super(key: key);
-String username;
+  Posts({Key? key, required this.username}) : super(key: key);
+  String username;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer:appbar(username:username) ,
-appBar: AppBar(actions: [
-  IconButton(onPressed: (){
-    Navigator.pop(context);
-  }, icon: Icon(Icons.logout))
-],
-  title: Text("enas tegram",style: TextStyle(fontFamily:'Freehand-Regular'
-),
-
-),
-backgroundColor: Colors.black87,),
-      body:postsViow());
+        drawer: appbar(username: username),
+        appBar: AppBar(
+          actions: [
+            IconButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                icon: Icon(Icons.logout))
+          ],
+          title: Text(
+            "enas tegram",
+            style: TextStyle(fontFamily: 'Freehand-Regular'),
+          ),
+          backgroundColor: Colors.black87,
+        ),
+        body: postsViow());
   }
-
-
 }
 
-
 /// bar
-class appbar  extends StatefulWidget {
-   appbar ({Key? key , required this.username}) : super(key: key);
-String username;
+class appbar extends StatefulWidget {
+  appbar({Key? key, required this.username}) : super(key: key);
+  String username;
+
   @override
-  State<appbar> createState() => _appbarState(username:username);
+  State<appbar> createState() => _appbarState(username: username);
 }
 
 class _appbarState extends State<appbar> {
   String username;
-  _appbarState ({ required this.username}) ;
+
+  _appbarState({required this.username});
 
   @override
   Widget build(BuildContext context) {
     return Drawer(
       child: ListView(
         children: [
-          IconButton(onPressed: (){
-            Navigator.pop(context);
-          }, icon: Icon(Icons.logout)),
-          UserAccountsDrawerHeader(accountName: Text(username), accountEmail: Text("wael.alqawasmi@yahoo.com"))
+
+          UserAccountsDrawerHeader(
+              accountName: Text(username),
+              accountEmail: Text("wael.alqawasmi@yahoo.com"))
         ],
       ),
     );
   }
 }
 
-
-
 //body
-
 
 class postsViow extends StatefulWidget {
   const postsViow({Key? key}) : super(key: key);
@@ -63,28 +64,24 @@ class postsViow extends StatefulWidget {
   State<postsViow> createState() => _postsViowState();
 }
 
-
-
-
-
 class _postsViowState extends State<postsViow> {
   @override
   Widget build(BuildContext context) {
-    return      Center(
-        child:
-
-        Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children:[ buildContainer(),buildContainer(),
-          ],),
-      );
-
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          buildContainer(),
+          buildContainer(),
+        ],
+      ),
+    );
   }
-  bool liked= true;
+
+  bool liked = true;
 
   Container buildContainer() {
     return Container(
-
       alignment: Alignment.center,
       width: 320,
       height: 290,
@@ -106,25 +103,27 @@ class _postsViowState extends State<postsViow> {
               IconButton(
                 style: ButtonStyle(
                   backgroundColor:
-                  MaterialStatePropertyAll<Color>(Colors.white),
+                      MaterialStatePropertyAll<Color>(Colors.white),
                 ),
-                icon: liked?(Icon(
-                  Icons.favorite_border_outlined,
-                  color: Colors.black87,
-                )):(Icon(
-                  Icons.favorite,
-                  color: Colors.black87,
-                )),
+                icon: liked
+                    ? (Icon(
+                        Icons.favorite_border_outlined,
+                        color: Colors.black87,
+                      ))
+                    : (Icon(
+                        Icons.favorite,
+                        color: Colors.black87,
+                      )),
                 onPressed: () {
-                setState(() {
-                  liked=!liked;
-                });
+                  setState(() {
+                    liked = !liked;
+                  });
                 },
               ),
               IconButton(
                 style: ButtonStyle(
                   backgroundColor:
-                  MaterialStatePropertyAll<Color>(Colors.white),
+                      MaterialStatePropertyAll<Color>(Colors.white),
                 ),
                 icon: Icon(
                   Icons.comment_rounded,
@@ -135,7 +134,7 @@ class _postsViowState extends State<postsViow> {
               IconButton(
                 style: ButtonStyle(
                   backgroundColor:
-                  MaterialStatePropertyAll<Color>(Colors.white),
+                      MaterialStatePropertyAll<Color>(Colors.white),
                 ),
                 icon: Icon(
                   Icons.share,
@@ -150,4 +149,3 @@ class _postsViowState extends State<postsViow> {
     );
   }
 }
-
