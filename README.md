@@ -1,5 +1,5 @@
 # trining
-![myFistApp.png](assets/img/enasTegrame.png)
+
 
 ![myFistApp.png](assets/img/BOTTONbar.png)
 ![myFistApp.png](assets/img/navagation.png)
@@ -11,7 +11,7 @@
 
 ![myFistApp.png](assets/img/signin.png)
 ![myFistApp.png](assets/img/HOME.png)
-
+![myFistApp.png](assets/img/enasTegrame.png)
 ![myFistApp.png](assets/img/stak.png)
 
 
