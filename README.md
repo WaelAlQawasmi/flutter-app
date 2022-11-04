@@ -1,5 +1,6 @@
 # trining
-
+## idea
+- This app for trinning and practice on flutter and dart
 
 ![myFistApp.png](assets/img/BOTTONbar.png)
 ![myFistApp.png](assets/img/navagation.png)
